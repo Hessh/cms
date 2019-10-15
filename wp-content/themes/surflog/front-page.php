@@ -1,5 +1,6 @@
 
-<?php get_header(); ?>
+<?php 
+get_header(); 
+get_footer();
+?>
 
-<!-- END tag for the openingtag in header.php / write code above-->
-</div>
