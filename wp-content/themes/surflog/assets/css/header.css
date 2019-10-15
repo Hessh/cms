@@ -2,15 +2,13 @@
 
 header {
     width: 100vw;
-    height: 60px;
+    /*height: 60px;*/
   }
   
   nav {
     width: 100vw;
     height: 60px;
     background-color: #F7FCFF;
-    position: fixed;
-    z-index: 996;
     box-shadow: 0 10px 10px -10px rgba(3, 3, 3, 0.5)
   }
   
