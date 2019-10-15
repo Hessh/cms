@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SurfGuru - Home</title>
-</head>
+<?php get_header(); ?>
 
-<body>
-    <h1>Yellå</h1>
-</body>
-
-</html>
+<!-- END tag for the openingtag in header.php / write code above-->
+</div>

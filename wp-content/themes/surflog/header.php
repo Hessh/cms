@@ -15,14 +15,17 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://gmpg.org/xfn/11" rel="profile">
 
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'surflog' ); ?></a>
+	<!--<a class="skip-link screen-reader-text" href="#content"><?php /**esc_html_e( 'Skip to content', 'surflog' );*/ ?></a>-->
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
