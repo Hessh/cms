@@ -122,6 +122,7 @@ add_action('wp_enqueue_scripts', 'surflog_enqueue_style');
 function surflog_enqueue_style()
 {
 	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+	wp_enqueue_style('article', get_stylesheet_directory_uri() . '/assets/css/article-page.css', false);
 	
 	/*if (is_front_page()) {
         wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
