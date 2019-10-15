@@ -15,7 +15,7 @@
 	<footer class="row">
 		<div class="col-4">
 			om oss
-			
+			<br><br/>
 			Surf Guru markedsfører for ulike aktører som selger surfeturer. 
 			Våre aktører er kjent for å tilby de beste og mest opplevelsesrike turene. BLA BLA BLA VI ER SUPRE
 
