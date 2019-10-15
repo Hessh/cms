@@ -1,10 +1,10 @@
 .container-fluid {
     width: 100%;
-    min-height: 700px;
 }
 
 .container {
     max-width: 960px;
+    margin: 0 auto;
     padding: 0 10px;
 }
 
