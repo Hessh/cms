@@ -29,9 +29,9 @@
         <div class="header-left">
             <a href="<?php echo get_home_url(); ?>">
                 <?php
-                $custom_logo_id = get_theme_mod('custom_logo');
-                $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
-                echo '<img class="logo" src="' . esc_url($custom_logo_url) . '" alt="logo">';
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $logo = wp_get_attachment_image_src( $custom_logo_id );
+                        echo '<img src="' . esc_url( $logo ) . '" alt="' . get_bloginfo( 'name' ) . '">';
                 ?>
             </a>
         </div>
