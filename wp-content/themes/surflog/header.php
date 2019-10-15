@@ -34,10 +34,9 @@
                 $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
                 echo '<img class="logo" src="' . esc_url($custom_logo_url) . '" alt="logo">';
                 ?>
-                <span class="logo-text"><span><?php echo bloginfo('name') ?></span><?php echo bloginfo('description') ?></span>
             </a>
         </div>
-        
+
         <?php wp_nav_menu (
 
             array(
