@@ -43,9 +43,11 @@ if ( ! function_exists( 'surflog_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
+		/*register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'surflog' ),
-		) );
+		) );*/
+
+		add_theme_support('menus');
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
