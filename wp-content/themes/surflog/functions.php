@@ -119,7 +119,7 @@ function surflog_widgets_init() {
 add_action( 'widgets_init', 'surflog_widgets_init' );
 
 
-/**  */
+/** Selfmade function for linking sites with styles */
 add_action('wp_enqueue_scripts', 'surflog_enqueue_style');
 function surflog_enqueue_style()
 {
