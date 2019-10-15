@@ -1,9 +1,11 @@
 footer{
     background-color:#24221F;
+
 }
 
 footer * {
     color: #FFFFFF;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10%;
+    font-size: 40%;
+    display: flex;
 }
