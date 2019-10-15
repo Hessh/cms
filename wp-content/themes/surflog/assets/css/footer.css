@@ -1,3 +1,7 @@
-.row{
+footer{
     background-color: black;
+}
+
+footer * {
+    color: white;
 }

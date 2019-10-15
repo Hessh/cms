@@ -12,21 +12,23 @@
 ?>
 
 	</div><!-- #content -->
-
 	<footer class="row">
 		<div class="col-4">
 			om oss
 			Surf Guru markedsfører for ulike aktører som selger surfeturer. 
-			Våre aktører er kjent for å tilby de beste og mest opplevelsesrike turene.
-			
+			Våre aktører er kjent for å tilby de beste og mest opplevelsesrike turene. BLA BLA BLA VI ER SUPRE
+
 		</div>
 		<div class="col-4">
-			personvern
+			Informasjon om etterelannet 
 		</div>
 		<div class="col-4">
-			kontakt
+			Kontakt oss 
+			(Skjema)
 		</div>
+
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
