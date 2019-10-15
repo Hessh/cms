@@ -116,6 +116,56 @@ function surflog_widgets_init() {
 }
 add_action( 'widgets_init', 'surflog_widgets_init' );
 
+
+/**  */
+add_action('wp_enqueue_scripts', 'surflog_enqueue_style');
+function surflog_enqueue_style()
+{
+	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+	
+	/*if (is_front_page()) {
+        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+        wp_enqueue_style('index', get_stylesheet_directory_uri() . '/assets/css/index-style.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+    } elseif (is_home()) {
+        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+        wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/css/blogg.css', false);
+    } else if (
+        is_page_template('cyberghost-review-page.php') ||
+        is_page_template('expressvpn-review-page.php') ||
+        is_page_template('nordvpn-review-page.php') ||
+        is_page_template('privatevpn-review-page.php') ||
+        is_page_template('proton-review-page.php') ||
+        is_page_template('surfshark-review-page.php') ||
+        is_page_template('ultra-review-page.php') ||
+        is_page_template('bullguard-review-page.php') ||
+        is_page_template('trustzone-review-page.php') ||
+        is_page_template('hideme-review-page.php') ||
+        is_page_template('ovpn-review-page.php') ||
+        is_page_template('hidemyass-review-page.php')
+    ) {
+        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+    }else if(is_page_template( 'index-split-page.php' )){
+        wp_enqueue_style('new-styles', get_stylesheet_directory_uri() . '/assets/css/new-style.css', false);
+        wp_enqueue_style('new-responsive', get_stylesheet_directory_uri() . '/assets/css/new-responsive.css', false);
+        wp_enqueue_style('progress', get_stylesheet_directory_uri() . '/assets/css/progress.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+    } elseif (is_page_template('article-single-post.php')) {
+        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+        wp_enqueue_style('index', get_stylesheet_directory_uri() . '/assets/css/index-style.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+    } else {
+        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+    }*/
+}
+
 /**
  * Enqueue scripts and styles.
  */

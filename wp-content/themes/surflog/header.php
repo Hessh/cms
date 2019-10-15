@@ -24,38 +24,21 @@
 </head>
 
 <body>
-<div id="page" class="site">
-	<!--<a class="skip-link screen-reader-text" href="#content"><?php /**esc_html_e( 'Skip to content', 'surflog' );*/ ?></a>-->
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$surflog_description = get_bloginfo( 'description', 'display' );
-			if ( $surflog_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $surflog_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'surflog' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<header>
+        <div class="logo-container">
+            <a href="<?php echo get_home_url(); ?>">
+                <?php
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+                echo '<img class="logo" src="' . esc_url($custom_logo_url) . '" alt="logo">';
+                ?>
+                <span class="logo-text"><span><?php echo bloginfo('name') ?></span><?php echo bloginfo('description') ?></span>
+            </a>
+        </div>
+        <?php wp_nav_menu(array(
+            'theme_location' => 'header-menu',
+            'container' => 'nav',
+            'container_class' => 'main-menu'
+        )); ?>
+        <div id="burger-menu">&#9776;</div>
+    </header>
