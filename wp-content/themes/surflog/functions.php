@@ -122,56 +122,64 @@ add_action('wp_enqueue_scripts', 'surflog_enqueue_style');
 function surflog_enqueue_style()
 {
 	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+	wp_enqueue_style('header-front-page', get_stylesheet_directory_uri() . '/assets/css/header-front-page.css', false);
+	wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+	wp_enqueue_style('front-page', get_stylesheet_directory_uri() . '/assets/css/front-page.css', false);
+	wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/css/blog.css', false);
 	wp_enqueue_style('article', get_stylesheet_directory_uri() . '/assets/css/article-page.css', false);
+	wp_enqueue_style('product', get_stylesheet_directory_uri() . '/assets/css/product-page.css', false);
+	wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
 	
-	/*if (is_front_page()) {
-        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-        wp_enqueue_style('index', get_stylesheet_directory_uri() . '/assets/css/index-style.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
+	
+	if (is_front_page()) {
+
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('header-front-page', get_stylesheet_directory_uri() . '/assets/css/header-front-page.css', false);
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+        wp_enqueue_style('front-page', get_stylesheet_directory_uri() . '/assets/css/front-page.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
     } elseif (is_home()) {
+
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+		wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/css/blog.css', false);
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
+    } else if (is_page_template('article-page.php')) {
+
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+		wp_enqueue_style('article', get_stylesheet_directory_uri() . '/assets/css/article-page.css', false);
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
+    }else if(is_page_template( 'product-page.php' )){
+
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+		wp_enqueue_style('product', get_stylesheet_directory_uri() . '/assets/css/product-page.css', false);
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
+    } /*elseif (is_page_template('article-single-post.php')) {
+
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
+    } */ else {
+
         wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
-        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-        wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/css/blogg.css', false);
-    } else if (
-        is_page_template('cyberghost-review-page.php') ||
-        is_page_template('expressvpn-review-page.php') ||
-        is_page_template('nordvpn-review-page.php') ||
-        is_page_template('privatevpn-review-page.php') ||
-        is_page_template('proton-review-page.php') ||
-        is_page_template('surfshark-review-page.php') ||
-        is_page_template('ultra-review-page.php') ||
-        is_page_template('bullguard-review-page.php') ||
-        is_page_template('trustzone-review-page.php') ||
-        is_page_template('hideme-review-page.php') ||
-        is_page_template('ovpn-review-page.php') ||
-        is_page_template('hidemyass-review-page.php')
-    ) {
-        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
-        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-    }else if(is_page_template( 'index-split-page.php' )){
-        wp_enqueue_style('new-styles', get_stylesheet_directory_uri() . '/assets/css/new-style.css', false);
-        wp_enqueue_style('new-responsive', get_stylesheet_directory_uri() . '/assets/css/new-responsive.css', false);
-        wp_enqueue_style('progress', get_stylesheet_directory_uri() . '/assets/css/progress.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
-    } elseif (is_page_template('article-single-post.php')) {
-        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-        wp_enqueue_style('index', get_stylesheet_directory_uri() . '/assets/css/index-style.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
-    } else {
-        wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-        wp_enqueue_style('new-footer', get_stylesheet_directory_uri() . '/assets/css/new-footer.css', false);
-        wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-    }*/
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+		
+    }
 }
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts.
  */
 function surflog_scripts() {
-	wp_enqueue_style( 'surflog-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'surflog-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
