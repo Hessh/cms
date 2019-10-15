@@ -37,10 +37,23 @@
                 <span class="logo-text"><span><?php echo bloginfo('name') ?></span><?php echo bloginfo('description') ?></span>
             </a>
         </div>
-        <?php/* wp_nav_menu(array(
+        
+        <?php wp_nav_menu (
+
+            array(
+
+                'theme_location' => 'top-menu',
+                'menu_class' => 'navigation'
+            )
+
+             /* wp_nav_menu(array(
             'theme_location' => 'header-menu',
             'container' => 'nav',
             'container_class' => 'main-menu'
-        )); */?>
+        )); */
+
+        );?>
+
+       
         <div id="burger-menu">&#9776;</div>
     </header>
