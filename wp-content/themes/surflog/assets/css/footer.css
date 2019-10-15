@@ -1,5 +1,6 @@
 footer{
     background-color:#24221F;
+    height: 60%;
 
 }
 
@@ -8,4 +9,5 @@ footer * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40%;
     display: flex;
+    
 }
