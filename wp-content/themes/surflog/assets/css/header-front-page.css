@@ -1,0 +1,20 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+[class*="header-"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-left{
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.header-right{
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
