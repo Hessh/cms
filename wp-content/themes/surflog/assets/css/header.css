@@ -158,48 +158,4 @@ header {
     background-color: #222222;
   }
   
-  #add-disclaimer {
-    position: fixed;
-    max-width: 300px;
-    top: 30%;
-    left: 50%;
-    background-color: white;
-    padding: 10px;
-    z-index: 999;
-    transform: translate(-50%, -30%);
-  }
-  
-  #add-disclaimer-overlay {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 998;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  #ranking-disclaimer {
-    position: fixed;
-    max-width: 300px;
-    top: 30%;
-    left: 50%;
-    background-color: white;
-    padding: 10px;
-    z-index: 999;
-    transform: translate(-50%, -30%);
-  }
-  
-  #ranking-disclaimer-overlay {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 998;
-    width: 100vw;
-    height: 100vh;
-  }
-  
   /* END HEADER */
