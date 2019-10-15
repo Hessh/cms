@@ -16,7 +16,9 @@
 	<footer class="row">
 		<div class="col-4">
 			om oss
-			Surf Guru markedsfører for ulike aktører som selger surfeturer. Våre aktører er kjent for å tilby de mest opplevelsesrike turene,
+			Surf Guru markedsfører for ulike aktører som selger surfeturer. 
+			Våre aktører er kjent for å tilby de beste og mest opplevelsesrike turene.
+			
 		</div>
 		<div class="col-4">
 			personvern
