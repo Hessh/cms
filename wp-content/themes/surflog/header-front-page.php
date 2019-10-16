@@ -25,23 +25,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-left">
-            <a href="<?php echo get_home_url(); ?>">
-                <?php
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $logo = wp_get_attachment_image_src( $custom_logo_id );
-                        echo '<img src="' . esc_url( $logo ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                ?>
-            </a>
+    <header class="header-front-page">
+        <div class="row">
+            <div class="col-12">
+                <a href="<?php echo get_home_url(); ?>">
+                    <img src="http://hessh.no/cms/wp-content/uploads/2019/10/logo-orange.png" alt="SurfGuru logo">
+                </a>
+            </div>
         </div>
-        <div class="header-right">
-            <?php wp_nav_menu(
-                array(
-                    'theme_location' => 'top-menu',
-                    'menu_class' => 'navigation'
-                )
-            ); ?>
-            <div id="burger-menu">&#9776;</div>
+        <div class="row">
+            <div class="col-12">
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'top-menu',
+                        'menu_class' => 'navigation'
+                    )
+                ); ?>
+            </div>
         </div>
     </header>
