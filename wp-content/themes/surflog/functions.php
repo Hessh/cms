@@ -193,6 +193,22 @@ function surflog_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'surflog_scripts' );
 
+
+/** Spesifies the lenght of the text in a thumbnail, and adds "..." */
+function wp_excerpt_length($length)
+{
+    return 20;
+}
+
+function wpdocs_excerpt_more($more)
+{
+    return '...';
+}
+add_filter('excerpt_more', 'wpdocs_excerpt_more');
+
+add_filter('excerpt_length', 'wp_excerpt_length', 999);
+
+
 /**
  * Implement the Custom Header feature.
  */
