@@ -36,12 +36,11 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <?php wp_nav_menu(
-                    array(
-                        'theme_location' => 'top-menu',
-                        'menu_class' => 'navigation'
-                    )
-                ); ?>
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'top-menu',
+                    'container' => 'nav',
+                    'menu_class' => 'main-menu'
+                 )); ?>
             </div>
         </div>
     </header>
