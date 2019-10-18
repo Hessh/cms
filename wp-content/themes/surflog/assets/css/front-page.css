@@ -14,3 +14,23 @@
 .product-link h3{
     color: #FFFFFF;
 }
+
+.gallary-container{
+    min-height: 900px;
+    background-image: url(http://hessh.no/cms/wp-content/uploads/2019/10/jack-antal-rZt_HWizFcw-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.gallary-table .row{
+    height: 200px;
+    margin-bottom: 4rem;
+}
+
+.gallary-table .row *{
+    background-color: #FFFFFF;
+}
+
+.empty {
+    height: 600px;
+}

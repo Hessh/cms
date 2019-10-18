@@ -15,7 +15,9 @@
                     /*if (in_category('182')) {*/
                     ?>
                     <div class="product-box">
-                        <div class="product-banner" style="background-image: url(<?php if (has_post_thumbnail()) {the_post_thumbnail_url();} ?>)">
+                        <div class="product-banner" style="background-image: url(<?php if (has_post_thumbnail()) {
+                                                                                                the_post_thumbnail_url();
+                                                                                            } ?>)">
                             <a class="product-link" href="<?php the_permalink() ?>">
                                 <?php the_title('<h3>', '</h3>', true); ?>
                             </a>
@@ -31,6 +33,24 @@
 
             wp_reset_query();
             ?>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gallary-container">
+    <div class="row">
+        <div class="col-push-12 empty"></div>
+    </div>
+    <div class="container gallary-table">
+        <div class="title-row">
+            <div class="col-12">
+                <h2>BLOG</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <</div> <div class="col-10">Bilder
+            </div>
+            <div class="col-1">></div>
         </div>
     </div>
 </div>
