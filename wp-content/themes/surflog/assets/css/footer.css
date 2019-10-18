@@ -1,12 +1,12 @@
 footer{
     background-color:#24221F;
+    width: 100vw;
 }
 
+/* legg inn font vi skal bruke i style.css, og bruk én eller to fonter totalt*/
 footer * {
     color: #FFFFFF;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     display: flex;
-    height: 100px;
-    width: 100%;
 }
