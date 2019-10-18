@@ -20,6 +20,17 @@
     height: 6rem;
 }
 
+.navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 /*[class*="header-"] {
     display: flex;
     flex-direction: row;

@@ -123,6 +123,7 @@ add_action( 'widgets_init', 'surflog_widgets_init' );
 add_action('wp_enqueue_scripts', 'surflog_enqueue_style');
 function surflog_enqueue_style()
 {
+	/*
 	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
 	wp_enqueue_style('header-front-page', get_stylesheet_directory_uri() . '/assets/css/header-front-page.css', false);
 	wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
@@ -131,17 +132,17 @@ function surflog_enqueue_style()
 	wp_enqueue_style('article', get_stylesheet_directory_uri() . '/assets/css/article-page.css', false);
 	wp_enqueue_style('product', get_stylesheet_directory_uri() . '/assets/css/product-page.css', false);
 	wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-	
+	*/
 	
 	if (is_front_page()) {
 
 		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
 		wp_enqueue_style('header-front-page', get_stylesheet_directory_uri() . '/assets/css/header-front-page.css', false);
+		wp_enqueue_style('front-page', get_stylesheet_directory_uri() . '/assets/css/front-page.css', false);
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
-        wp_enqueue_style('front-page', get_stylesheet_directory_uri() . '/assets/css/front-page.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
 		
-    } elseif (is_home()) {
+    } else if (is_home()) {
 
 		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
 		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
@@ -157,7 +158,7 @@ function surflog_enqueue_style()
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
 		
-    }else if(is_page_template( 'product-page.php' )){
+    }else if(is_page_template('product-page.php')) {
 
 		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
 		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
@@ -165,12 +166,7 @@ function surflog_enqueue_style()
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
 		
-    } /*elseif (is_page_template('article-single-post.php')) {
-
-		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
-		
-    } */ else {
+    } else {
 
         wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);

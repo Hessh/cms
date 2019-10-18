@@ -38,6 +38,7 @@
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'top-menu',
+                        'container' => 'nav',
                         'menu_class' => 'navigation'
                     )
                 ); ?>

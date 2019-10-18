@@ -19,3 +19,9 @@
 .header img{
   height: 6rem;
 }
+
+.main-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
