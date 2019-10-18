@@ -1,4 +1,8 @@
-.product-banner{
+.product-row {
+    height: 200px;
+}
+
+.product-box {
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -17,9 +21,16 @@
 
 .gallary-container{
     min-height: 900px;
+    margin-top: 2rem;
     background-image: url(http://hessh.no/cms/wp-content/uploads/2019/10/jack-antal-rZt_HWizFcw-unsplash.jpg);
     background-size: cover;
     background-position: bottom center;
+}
+
+.gallary-table{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .gallary-table .row{
