@@ -6,9 +6,13 @@ header {
   width: 100%;
 }
 
-.header-left{
+header [class*="header-"] {
   display: flex;
+  flex-direction: row;
   align-items: center;
+}
+
+.header-left{
   justify-content: flex-start;
 }
 
@@ -19,16 +23,7 @@ header {
 }
 
 .header-right{
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
-}
-
-header [class*="header-"] {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 header img{
