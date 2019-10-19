@@ -22,9 +22,9 @@
 .gallary-container{
     min-height: 900px;
     margin-top: 2rem;
-    background-image: url(http://hessh.no/cms/wp-content/uploads/2019/10/jack-antal-rZt_HWizFcw-unsplash.jpg);
+    background-image: url("../img/bottom-bw.jpg");
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
 }
 
 .gallary-table{
@@ -42,6 +42,10 @@
     background-color: #FFFFFF;
 }
 
-.empty {
+.empty-top {
     height: 600px;
+}
+
+.empty-bottom {
+    height: 2rem;
 }

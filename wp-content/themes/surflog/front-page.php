@@ -33,7 +33,7 @@
 </div>
 <div class="container-fluid gallary-container">
     <div class="row">
-        <div class="col-push-12 empty"></div>
+        <div class="col-push-12 empty-top"></div>
     </div>
     <div class="gallary-table">
         <div class="title-row">
@@ -42,11 +42,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-1">
-                <</div> <div class="col-10">Bilder
-            </div>
-            <div class="col-1">></div>
+            <div class="col-1">left</div> 
+            <div class="col-10">Bilder</div>
+            <div class="col-1">right</div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-push-12 empty-bottom"></div>
     </div>
 </div>
 <?php get_footer(); ?>
