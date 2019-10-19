@@ -8,7 +8,7 @@
 <?php get_header($name = null) ?>
 
 <div class="container-fluid-gray">
-    <div class="article-container basic">
+    <div class="article-container">
 
         <h1><?php the_title();?></h1>
 
