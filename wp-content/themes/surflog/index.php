@@ -24,7 +24,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 <?php
                 if (have_posts()) :
                     while (have_posts()) : the_post();
-                        if (in_category('Uncategorized')) {
+                        if (in_category('Blog')) {
                             ?>
                             <div class="article-box">
                                 <div class="blogg-banner">
