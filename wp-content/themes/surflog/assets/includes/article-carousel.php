@@ -3,7 +3,7 @@
             <div class="col-push-12 empty-top"></div>
         </div>
         <div class="gallary-table">
-            <div class="title-row">
+            <div class="title">
                 <div class="col-12">
                     <h2>BLOG</h2>
                 </div>

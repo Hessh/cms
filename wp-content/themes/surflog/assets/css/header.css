@@ -31,14 +31,29 @@ header img{
 }
 
 .navigation{
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.navigation li {
+  margin-left: 1rem;
+}
+
 .navigation a {
+  color: #303030;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation a:visited {
+  color: #303030;
+}
+
+.navigation a:hover{
+  color: #474747;
 }
 
 .main-menu{

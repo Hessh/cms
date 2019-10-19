@@ -52,6 +52,5 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             </div>
         </div>
     </div>
-    <?php include 'assets/includes/article-carousel.php'?>
 </div>
 <?php get_footer() ?>

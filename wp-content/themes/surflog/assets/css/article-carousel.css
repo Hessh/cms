@@ -12,6 +12,10 @@
     padding: 0 10px;
 }
 
+.gallary-table .title .col-12 {
+    text-align: center;
+}
+
 .gallary-table .row{
     height: 200px;
     margin-bottom: 4rem;
