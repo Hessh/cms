@@ -137,7 +137,7 @@ function surflog_enqueue_style()
 	if (is_front_page()) {
 
 		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-		wp_enqueue_style('header-front-page', get_stylesheet_directory_uri() . '/assets/css/header-front-page.css', false);
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
 		wp_enqueue_style('front-page', get_stylesheet_directory_uri() . '/assets/css/front-page.css', false);
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);

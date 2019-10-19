@@ -26,15 +26,12 @@
 
 <body>
     <header class="header-front-page">
-        <div class="row">
-            <div class="col-12">
+        <div class="header-left">
                 <a href="<?php echo get_home_url(); ?>">
                     <img src="http://hessh.no/cms/wp-content/uploads/2019/10/logo-orange.png" alt="SurfGuru logo">
                 </a>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="header-right">
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'top-menu',
@@ -42,6 +39,5 @@
                         'menu_class' => 'navigation'
                     )
                 ); ?>
-            </div>
         </div>
     </header>
