@@ -1,7 +1,15 @@
+.hero{
+  height: 300px;
+  background-image: url("../img/hero-extra.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
 .title-row {
     margin-top: 4.5rem;
     padding-top: 1rem;
-    background-color: #F3F6FA;
+    background-color: white;
+    text-align: center;
   }
   
   #blogg-container {
@@ -13,7 +21,7 @@
   
   .blogg-table {
     width: 100%;
-    background-color: #F3F6FA;
+    background-color: white;
     min-height: 100%;
     padding-bottom: 10px;
   }
@@ -66,7 +74,7 @@
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: darkgrey;
+    color: white;
   }
   
   .article-box a {

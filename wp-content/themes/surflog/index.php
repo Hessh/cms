@@ -8,7 +8,10 @@ $number_of_pages = ceil($published_posts / $posts_per_page);
 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
-<div id="blogg-container">
+
+<div class="container-fluid">
+    <div class="hero"></div>
+    <div id="blogg-container">
     <div class="blogg-table">
         <div class="row title-row">
             <div class="col-12">
@@ -45,6 +48,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             <span id="page-counter"><?php echo $paged; ?> / <?php echo $number_of_pages ?></span>
             <?php next_posts_link(">"); ?>
         </div>
+    </div>
     </div>
 </div>
 <?php get_footer() ?>
