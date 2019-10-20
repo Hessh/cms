@@ -22,11 +22,9 @@
             </div>
             <div class="product-row">
                 <div class="product-box">
+                    <div class="col-6">
                             <div class="product-banner">
-                                <a href="<?php the_permalink() ?>">
-                                    <img src="<?php if (has_post_thumbnail()) {
-                                                                the_post_thumbnail_url();
-                                                            } ?>"></a>
+                            </div>
                             </div>
                                 <a href="<?php the_permalink() ?>">
                                     <?php the_title('<h3>', '</h3>', true); ?>
