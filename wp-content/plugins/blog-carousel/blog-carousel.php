@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: blog-carousel
+Plugin Name: Blog Carousel
 Plugin URI:  https://hessh.no/cms/
 Description: Carousel for blog posts
 Author:      Sofie Jønsson
@@ -11,7 +11,7 @@ License:     GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 defined( 'ABSPATH' ) or die( 'Hey, you dont have access to this file!' );
 
-class blog-carousel {
+class blogCarousel {
 
    function __construct() {
 
@@ -20,5 +20,5 @@ class blog-carousel {
 }
 
 if ( class_exists( 'blog-carousel' ) ) {
-    $blog-carousel = new blog-carousel();
+    $blogCarousel = new blogCarousel();
 }
