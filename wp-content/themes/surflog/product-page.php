@@ -5,47 +5,47 @@
 */
 ?>
 
-<?php get_header($name = null) ?>
+<?php
+get_header();
+$count_posts = wp_count_posts();
 
-<div class="hero">
+$published_posts = $count_posts->publish;
 
-</div>
+$number_of_pages = ceil($published_posts / $posts_per_page);
 
-<div class="container-fluid-gray">
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+?>
+
+<div class="container-fluid">
+    <div class="hero"></div>
 
     <div class="product-container">
         <div class="product-table">
+            <h1><?php the_title(); ?></h1>
+
             <div class="row title-row">
                 <div class="col-12">
                     <h1 class="main-title text-center"></h1>
                 </div>
             </div>
-            <div class="product-row">
-                <div class="product-box">
-                    <div class="col-6">
-                            <div class="product-banner">
-                            </div>
-                            </div>
-                                <a href="<?php the_permalink() ?>">
-                                    <?php the_title('<h3>', '</h3>', true); ?>
-                                    <?php the_excerpt() ?>
-                                    <button>BESTILL</button>
-                                </a>
+            <div class="row info-box">
+                <div class="col-lg-8 col-sm-12 order-sm-one">
+                    <img class="image-destination" src="<?php echo get_field('image') ?>">
+                </div>
+                <div class="col-lg-4 col-sm-12 order-sm-two">
+                    <li class="bulletmark"><?php echo get_field('function_1') ?></li>
+                    <li class="bulletmark"><?php echo get_field('function_2') ?></li>
+                    <li class="bulletmark"><?php echo get_field('function_3') ?></li>
+                    <li class="bulletmark"><?php echo get_field('function_4') ?></li>
                 </div>
             </div>
-        
-
-        <h1><?php the_title();?></h1>
 
 
-             <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-        <?php the_content();?>
 
-         <?php endwhile; endif;?>
 
-         </div>
+
+        </div>
     </div>
 </div>
-
-<?php get_footer($name = null) ?>
+<?php get_footer() ?>
