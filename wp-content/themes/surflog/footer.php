@@ -24,11 +24,11 @@
                     ?>
                     <span class="footer-logo-text"><span><?php echo bloginfo('name') ?></span><?php echo bloginfo('description') ?></span>
                 </div>
-                <p class="footer-text">Målet med VPNportalen är att vara den ledande sidan för nätsäkerhet och integritet i Sverige. Vi testar och recenserar VPN-tjänster, och publicerar nyheter inom VPN, säkerhet och personuppgiftsskydd.</p>
+                <p class="footer-text">Surf guru er en nettside opprettholdt av et digitalt markedsføringsfirma som skaffer avtaler med aktører innenfor surfeturer. Her vil du ha muligheten til å utforske de ulike surfeturene på en og samme nettside. .</p>
             </div>
             <div class="col-push-1 sm-none"></div>
             <div class="col-lg-3 col-sm-12 footer-content">
-                <h3 class="bold footer-heading">Populära artiklar</h3>
+                <h3 class="bold footer-heading">Populære artikler</h3>
                 <?php wp_nav_menu(array(
                     'theme_location' => 'footer-articles',
                     'menu_id' => 'popular-articles',
@@ -39,9 +39,9 @@
             <div class="col-push-1 sm-none"></div>
             <div class="col-lg-3 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Kontakt</h3>
-                <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@vpnportalen.se</a>
-                <p id="location" class="icon footer-text"><span class="material-icons">location_on</span>Bogstadveien 27b,<br />0355 Oslo, Norge</p>
-                <a id="facebook" target="_blank" href="https://www.facebook.com/vpnportalen.se">Nå oss på Facebook</a>
+                <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@suefguru.no</a>
+                <p id="location" class="icon footer-text"><span class="material-icons">location_on</span>Bogstadveien 14b,<br />0355 Oslo, Norge</p>
+                <a id="facebook" target="_blank" href="https://www.facebook.com">Nå oss på Facebook</a>
             </div>
         </div>
         <div class="row">
@@ -54,7 +54,7 @@
                 )); ?>
             </div>
             <div class="col-12">
-                <p id="footer-info">VPNportalen drivs av företaget LWIM AS, organisationsnummer 915040004, adress Bogstadveien 27b, 0355 Oslo, Norge.</p>
+                <p id="footer-info">Surf Guru drivs av marketing AS, organisationsnummer ....., adress Bogstadveien 14b, 0355 Oslo, Norge.</p>
             </div>
         </div>
     </div>
