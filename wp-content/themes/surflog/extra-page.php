@@ -14,6 +14,9 @@
         <?php endwhile;
         endif; ?>
     </div>
-    <?php include 'assets/includes/article-carousel.php' ?>
+    <?php 
+    include 'assets/includes/surfer.php';
+    include 'assets/includes/post-carousel.php';
+    ?>
 </div>
 <?php get_footer(); ?>

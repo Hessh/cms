@@ -46,6 +46,10 @@
 
          </div>
     </div>
+    <?php 
+    include 'assets/includes/surfer.php';
+    include 'assets/includes/post-carousel.php';
+    ?>
 </div>
 
 <?php get_footer($name = null) ?>

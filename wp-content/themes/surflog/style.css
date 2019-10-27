@@ -615,11 +615,7 @@ textarea {
 --------------------------------------------------------------*/
 
 a {
-	color: royalblue;
-}
-
-a:visited {
-	color: black;
+	color: #000000;
 }
 
 a:hover, a:focus, a:active {
@@ -985,4 +981,31 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+/*--------------------------------------------------------------
+## Custom styles
+--------------------------------------------------------------*/
+
+.carousel-container {
+	width: 100%;
+	background-color: #000000;
+}
+
+.sp-post-carousel-section-title {
+	text-align: center;
+}
+
+.amazingcarousel-posttitle-link{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.amazingcarousel-posttitle-link:active{
+	color: #FFFFFF;
+}
+
+.main-title {
+	text-align: center;
 }
