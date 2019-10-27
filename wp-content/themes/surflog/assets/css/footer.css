@@ -1,12 +1,136 @@
-footer{
-    background-color:#000000;
+footer {
+    background-color: #00273D;
     width: 100vw;
-}
+    padding: 20px 10px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  footer * {
+    color: white;
+    list-style: none;
+  }
+  
+  #footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .footer-logo-container {
+    position: relative;
+  }
+  
+  .footer-logo {
+      margin-right: 5px;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .footer-logo-text {
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .footer-logo-text span {
+    font-weight: 800;
+  }
+  
+  #location span {
+    font-size: 1.5rem;
+    vertical-align: bottom;
+    margin-right: 10px;
+  }
+  
+  #email span {
+    font-size: 1.5rem;
+    vertical-align: bottom;
+    margin-right: 10px;
+  }
+  
+  #facebook {
+    width: 15px;
+    height: 30px;
+  }
+  
+  .footer-content {
+    margin-top: 15px;
+  }
+  
+  #popular-articles {
+    padding: 0;
+  }
+  
+  #popular-articles li {
+    display: block;
+    font-size: 1rem;
+  }
+  
+  #popular-articles a {
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: none;
+  }
+  
+  #footer-menu {
+    padding: 0;
+  }
+  
+  #footer-menu li {
+    float: left;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    margin: 0;
+    text-transform: none;
+  }
+  
+  #footer-menu li::after {
+    content: "|";
+    margin: 0 10px;
+  }
+  
+  #footer-menu li:last-of-type::after {
+    content: "";
+  }
+  
+  #footer-menu a {
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 400;
+  }
+  
+  footer a:hover {
+    color: #e4e4e4;
+  }
+  
+  #footer-info {
+    font-size: 0.9rem;
+  }
 
-/* legg inn font vi skal bruke i style.css, og bruk én eller to fonter totalt*/
-footer * {
-    color: #FFFFFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    display: flex;
-}
+  @media only screen and (max-width: 950px) {
+    #footer-menu li {
+      display: block;
+      width: 100%;
+    }
+    #footer-menu li::after {
+      display: none;
+    }
+  
+    #popular-articles li {
+      margin-left: 0;
+      padding: 0;
+    }
+  
+    #popular-articles a {
+      font-size: 0.9rem;
+    }
+  
+    .footer-content {
+      margin-top: 0;
+    }
+  }
