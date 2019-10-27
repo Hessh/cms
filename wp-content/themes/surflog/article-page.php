@@ -10,16 +10,20 @@
 <div class="container-fluid-gray">
     <div class="article-container">
 
-        <h1><?php the_title();?></h1>
+        <h1><?php the_title(); ?></h1>
 
 
-        <?php if (have_posts()) : while(have_posts()) : the_post();?>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <?php the_content();?>
+                <?php the_content(); ?>
 
-    <?php endwhile; endif;?>
+        <?php endwhile;
+        endif; ?>
 
     </div>
 </div>
-
+<?php
+include 'assets/includes/surfer.php';
+include 'assets/includes/post-carousel.php';
+?>
 <?php get_footer($name = null) ?>
