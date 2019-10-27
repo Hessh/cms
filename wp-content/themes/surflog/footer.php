@@ -13,17 +13,11 @@
 
 	</div><!-- #content -->
 	<footer>
+		<img src="/wp-content/themes/surflog/assets/img/logo-white.png" alt="Surf Guru" >
     <div id="footer-container">
         <div class="row">
             <div class="col-lg-4 col-sm-12">
-                <div class="footer-logo-container">
-                    <?php
-                    $custom_logo_id = get_theme_mod('custom_logo');
-                    $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
-                    echo '<img class="footer-logo" src="' . esc_url($custom_logo_url) . '" alt="footer-logo">';
-                    ?>
-                </div>
-                <p class="footer-text">Surf guru er en nettside opprettholdt av et digitalt markedsføringsfirma som skaffer avtaler med aktører innenfor surfeturer. Her vil du ha muligheten til å utforske de ulike surfeturene på en og samme nettside. .</p>
+                <p class="footer-text">Surf guru er en nettside opprettholdt av et digitalt markedsføringsfirma som skaffer avtaler med aktører innenfor surfeturer. Her vil du ha muligheten til å utforske de ulike surfeturene på en og samme nettside. </p>
             </div>
             <div class="col-push-1 sm-none"></div>
            <!-- <div class="col-lg-3 col-sm-12 footer-content">
