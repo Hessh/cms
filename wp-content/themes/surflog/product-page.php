@@ -18,11 +18,9 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 <div class="container-fluid">
     <div class="hero"></div>
-
     <div class="product-container">
         <div class="product-table">
             <h1><?php the_title(); ?></h1>
-
             <div class="row title-row">
                 <div class="col-12">
                     <h1 class="main-title text-center"></h1>
@@ -39,12 +37,6 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <li class="bulletmark"><?php echo get_field('function_4') ?></li>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
 </div>
@@ -53,4 +45,3 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     include 'assets/includes/surfer.php';
     include 'assets/includes/post-carousel.php';
 ?>
-<?php get_footer($name = null) ?>
