@@ -22,20 +22,19 @@
                     $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
                     echo '<img class="footer-logo" src="' . esc_url($custom_logo_url) . '" alt="footer-logo">';
                     ?>
-                    <span class="footer-logo-text"><span><?php echo bloginfo('name') ?></span><?php echo bloginfo('description') ?></span>
                 </div>
                 <p class="footer-text">Surf guru er en nettside opprettholdt av et digitalt markedsføringsfirma som skaffer avtaler med aktører innenfor surfeturer. Her vil du ha muligheten til å utforske de ulike surfeturene på en og samme nettside. .</p>
             </div>
             <div class="col-push-1 sm-none"></div>
-            <div class="col-lg-3 col-sm-12 footer-content">
+           <!-- <div class="col-lg-3 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Populære artikler</h3>
-                <?php wp_nav_menu(array(
+                <?php/* wp_nav_menu(array(
                     'theme_location' => 'footer-articles',
                     'menu_id' => 'popular-articles',
                     'container' => 'ul',
                     'menu_class' => 'popular-articles'
-                )); ?>
-            </div>
+                )); */?>
+            </div> -->
             <div class="col-push-1 sm-none"></div>
             <div class="col-lg-3 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Kontakt</h3>
@@ -54,7 +53,7 @@
                 )); ?>
             </div>
             <div class="col-12">
-                <p id="footer-info">Surf Guru drivs av marketing AS, organisationsnummer ....., adress Bogstadveien 14b, 0355 Oslo, Norge.</p>
+                <p id="footer-info">Surf Guru drives av marketing AS, organisationsnummer  123456789, adress Bogstadveien 14b, 0355 Oslo, Norge.</p>
             </div>
         </div>
     </div>
