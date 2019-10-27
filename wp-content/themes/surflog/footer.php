@@ -32,7 +32,7 @@
             <div class="col-push-1 sm-none"></div>
             <div class="col-lg-3 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Kontakt</h3>
-                <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@suefguru.no</a>
+                <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@surfguru.no</a>
                 <p id="location" class="icon footer-text"><span class="material-icons">location_on</span>Bogstadveien 14b,<br />0355 Oslo, Norge</p>
                 <a id="facebook" target="_blank" href="https://www.facebook.com">Nå oss på Facebook</a>
             </div>
