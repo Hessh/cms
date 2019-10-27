@@ -1009,3 +1009,7 @@ object {
 .main-title {
 	text-align: center;
 }
+
+.wonderplugincarousel-container {
+	padding: 30px 3rem !important;
+}
