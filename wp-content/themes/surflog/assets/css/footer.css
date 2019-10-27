@@ -18,7 +18,7 @@ footer {
     padding-top: 20px;
   }
   
- /* .footer-logo-container {
+ /*.footer-logo-container {
     position: relative;
   }
   
@@ -89,7 +89,7 @@ footer {
     text-transform: none;
   }
   
-  #footer-menu li::after {
+ #footer-menu li::after {
     content: "|";
     margin: 0 10px;
   }

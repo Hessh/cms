@@ -13,21 +13,21 @@
 
 	</div><!-- #content -->
 	<footer>
-		<img src="/wp-content/themes/surflog/assets/img/logo-white.png" alt="Surf Guru" >
+		<img src="http://hessh.no/cms/wp-content/uploads/2019/10/logo-white.png" alt="Surf Guru" >
     <div id="footer-container">
         <div class="row">
             <div class="col-lg-4 col-sm-12">
                 <p class="footer-text">Surf guru er en nettside opprettholdt av et digitalt markedsføringsfirma som skaffer avtaler med aktører innenfor surfeturer. Her vil du ha muligheten til å utforske de ulike surfeturene på en og samme nettside. </p>
-            </div>
+            </div> 
             <div class="col-push-1 sm-none"></div>
-           <!-- <div class="col-lg-3 col-sm-12 footer-content">
-                <h3 class="bold footer-heading">Populære artikler</h3>
+           <!--<div class="col-lg-3 col-sm-12 footer-content">
+                <h3 class="bold footer-heading">Populære artikler</h3> 
                 <?php/* wp_nav_menu(array(
-                    'theme_location' => 'footer-articles',
-                    'menu_id' => 'popular-articles',
-                    'container' => 'ul',
+					'theme_location' => 'footer-articles',
+					'menu_id' => 'popular-articles',
+					'container' => 'ul',
                     'menu_class' => 'popular-articles'
-                )); */?>
+                )); */?> 
             </div> -->
             <div class="col-push-1 sm-none"></div>
             <div class="col-lg-3 col-sm-12 footer-content">
@@ -41,8 +41,8 @@
             <div class="col-12">
                 <?php wp_nav_menu(array(
                     'theme_location' => 'footer-menu',
-                    'menu_id' => 'footer-menu',
-                    'container' => 'ul',
+					'menu_id' => 'footer-menu',
+					'container' => 'ul',
                     'menu_class' => 'footer-menu'
                 )); ?>
             </div>
