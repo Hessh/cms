@@ -44,7 +44,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         </div>
         <div class="row text-box product-content">
             <div class="col-12">
-                <h2 class="text-center">Info</h2>
+                <h2 class="text-center">Destination information</h2>
                 <?php echo get_field('typical_day') ?>
             </div>
             <div class="col-lg-4 col-sm-12">
