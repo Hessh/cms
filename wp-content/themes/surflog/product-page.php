@@ -53,18 +53,18 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <h2 class="text-center">Includes</h2>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <h3 class="text-center">Facilities</h3>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_1') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_2') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_3') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_4') ?></li>
+                    <h3>Facilities</h3>
+                    <li class="checkmark"><?php echo get_field('facility_1') ?></li>
+                    <li class="checkmark"><?php echo get_field('facility_2') ?></li>
+                    <li class="checkmark"><?php echo get_field('facility_3') ?></li>
+                    <li class="checkmark"><?php echo get_field('facility_4') ?></li>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                <h3 class="text-center">Close by</h3>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_1') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_2') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_3') ?></li>
-                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_4') ?></li>
+                <h3>Close by</h3>
+                    <li class="checkmark"><?php echo get_field('close_by_1') ?></li>
+                    <li class="checkmark"><?php echo get_field('close_by_2') ?></li>
+                    <li class="checkmark"><?php echo get_field('close_by_3') ?></li>
+                    <li class="checkmark"><?php echo get_field('close_by_4') ?></li>
                 </div>
             </div>
         </div>

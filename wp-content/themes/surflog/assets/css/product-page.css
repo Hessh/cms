@@ -10,4 +10,14 @@
   line-height: 32px;
 }
 
+.include-box .checkmark{
+  list-style-type: none;
+}
+
+.include-box .bulletmark::before{
+  font-family: "Material Icons";
+  content: "\e5ca";
+}
+
+
 
