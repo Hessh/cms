@@ -18,12 +18,11 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 <div class="container-fluid">
     <div class="hero"></div>
-    <div class="product-container">
+    <div class="container product-container">
         <div class="product-table">
-            <h1><?php the_title(); ?></h1>
             <div class="row title-row">
                 <div class="col-12">
-                    <h1 class="main-title text-center"></h1>
+                    <h1 class="main-title text-center"><?php the_title(); ?></h1>
                 </div>
             </div>
             <div class="row info-box">
@@ -31,10 +30,41 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <img class="image-destination" src="<?php echo get_field('image') ?>">
                 </div>
                 <div class="col-lg-4 col-sm-12 order-sm-two">
-                    <li class="bulletmark"><?php echo get_field('function_1') ?></li>
-                    <li class="bulletmark"><?php echo get_field('function_2') ?></li>
-                    <li class="bulletmark"><?php echo get_field('function_3') ?></li>
-                    <li class="bulletmark"><?php echo get_field('function_4') ?></li>
+                    <div class="text-container">
+                    <h2>Test</h2>
+                    <p><?php echo get_field('description_text') ?></p>
+                    </div>
+                    <div class="maps-container">
+                    <iframe src="<?php echo get_field('google_maps') ?>" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="button-container">
+                    <a href="<?php echo get_field('booking_link') ?>" target="_blank"><button>Book your trip now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-box">
+                <div class="col-12">
+                    <h2 class="text-center">A typical day</h2>
+                    <p><?php echo get_field('typical_day') ?></p>
+                </div>
+            </div>
+            <div class="row include-box">
+                <div class="col-12">
+                    <h2 class="text-center">Includes</h2>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h3 class="text-center">Facilities</h3>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_1') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_2') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_3') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('facility_4') ?></li>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                <h3 class="text-center">Close by</h3>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_1') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_2') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_3') ?></li>
+                    <li><span class="material-icons">checkmark</span><?php echo get_field('close_by_4') ?></li>
                 </div>
             </div>
         </div>

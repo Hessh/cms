@@ -27,6 +27,9 @@
    padding: 0;
 }
 
+.text-center {
+    text-align: center;
+}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
