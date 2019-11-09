@@ -1,12 +1,5 @@
 <?php
 get_header();
-$count_posts = wp_count_posts();
-
-$published_posts = $count_posts->publish;
-
-$number_of_pages = ceil($published_posts / $posts_per_page);
-
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
 
 <div class="container-fluid-gray">
@@ -41,11 +34,6 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             endwhile;
         endif;
         ?>
-        <div id="blogg-nav">
-            <?php previous_posts_link("<"); ?>
-            <span id="page-counter"><?php echo $paged; ?> / <?php echo $number_of_pages ?></span>
-            <?php next_posts_link(">"); ?>
-        </div>
     </div>
     <?php include 'assets/includes/surfer.php'; ?>
 </div>
