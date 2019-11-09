@@ -8,34 +8,35 @@
     </div>
     <div id="product-container">
         <div class="product-table container">
-            <div class="product-row">
-                <?php
-                query_posts('cat=182');
+            <?php 
+            foreach( get_field('featured_post') as $post ):
+            serup_postdata( $post );
+            ?>
 
-                if (have_posts()) :
-                    while (have_posts()) : the_post();
-                        /*if (in_category('182')) {*/
-                        ?>
-                        <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {
-                                                                                            the_post_thumbnail_url();
-                                                                                        } ?>)">
-                            <a class="product-link" href="<?php the_permalink() ?>">
-                                <?php the_title('<h3>', '</h3>', true); ?>
-                            </a>
-                        </div>
-                <?php
-                    /*}*/
-                    endwhile;
-                endif;
-
-                wp_reset_query();
-                ?>
+            <div class="row product-box">
+            <div class="col-lg-8 col-sm-12 order-sm-one"><?php echo get_field('image_01') ?>
+                <a href="<?php the_parmalink(); ?>">
+                <?php the_post_thumbnail('featured-medium'); ?>
+                <h3 class="article-title"><?php the_title(); ?></h3>
+                </a>
             </div>
+        
+    <?php 
+    wp_reset_postdata();
+            endforeach;
+            ?>
+        </div>
         </div>
     </div>
+
     <?php
     include 'assets/includes/surfer.php';
     include 'assets/includes/post-carousel.php';
     ?>
 </div>
 <?php get_footer(); ?>
+
+<!--
+<div class="col-lg-12 col-sm-12 order-sm-one">
+                     <div class="product-image">/div>
+                 </div>
