@@ -1,3 +1,11 @@
 .hero {
     background-image: url("../img/hero-extra.jpg");
 }
+
+.article-container {
+    max-width: 800px;
+    background-color: white;
+    margin: 4rem auto;
+    box-shadow: 2px 2px 5px lightgrey, -2px -2px 5px lightgrey;
+    padding: 2rem 4rem;
+}

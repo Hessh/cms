@@ -1,5 +1,5 @@
 footer {
-    background-color: #000000;
+    background-color: #fafafa;
     width: 100vw;
     padding: 20px 10px;
     z-index: 2;
@@ -7,7 +7,7 @@ footer {
 }
 
 footer * {
-    color: white;
+    color: black;
     list-style: none;
 }
 
