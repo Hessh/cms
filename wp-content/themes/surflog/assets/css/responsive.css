@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 10rem);
     position: relative;
     background-size: cover;
     background-position: center center;
