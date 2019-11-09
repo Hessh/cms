@@ -1,5 +1,9 @@
 .hero {
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 5rem);
     background-image: url("../img/hero-extra.jpg");
     background-size: cover;
     background-position: center center;

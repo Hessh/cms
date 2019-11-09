@@ -1,9 +1,13 @@
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0.5rem 1rem;
-  position: absolute;
   width: 100%;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  background-color: #FFFFFF;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.35);
 }
 
 header [class*="header-"] {
@@ -27,7 +31,7 @@ header [class*="header-"] {
 }
 
 header img{
-  height: 6rem;
+  height: 4rem;
 }
 
 .navigation{

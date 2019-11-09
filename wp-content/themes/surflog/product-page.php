@@ -18,11 +18,12 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 <div class="container-fluid">
     <div class="hero">
-        <div class="row title-row">
-            <div class="col-12">
-                <h1 class="title text-center"><?php the_title(); ?></h1>
-            </div>
-        </div>
+        <h1 class="title text-center"><?php the_title(); ?></h1>
+        <div class="overlay"></div>
+        <?php if (has_post_thumbnail($post->ID)) : ?>
+        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+            <div class="hero-img" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+        <?php endif; ?>
     </div>
     <div class="container product-container">
         <div class="row info-box product-content">

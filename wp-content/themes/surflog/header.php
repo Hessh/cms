@@ -31,7 +31,7 @@
     <header class="header-front-page">
         <div class="header-left">
             <a href="<?php echo get_home_url(); ?>">
-                <img src="http://hessh.no/cms/wp-content/uploads/2019/10/logo-orange.png" alt="SurfGuru logo">
+                <img src="http://hessh.no/cms/wp-content/uploads/2019/11/logo-orange.png" alt="SurfGuru logo">
             </a>
         </div>
         <div class="header-right">

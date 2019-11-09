@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 	<footer>
-		<img src="http://hessh.no/cms/wp-content/uploads/2019/10/logo-white.png" alt="Surf Guru" >
+		<img src="http://hessh.no/cms/wp-content/uploads/2019/11/logo-white.png" alt="Surf Guru" >
     <div id="footer-container">
         <div class="row">
             <div class="col-lg-4 col-sm-12">

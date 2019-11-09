@@ -9,17 +9,12 @@ $number_of_pages = ceil($published_posts / $posts_per_page);
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid-gray">
     <div class="hero">
-
+        <h1 class="title">Blog</h1>
     </div>
     <div id="blogg-container">
         <div class="blogg-table">
-            <div class="row title-row">
-                <div class="col-12">
-                    <h1 class="main-title text-center">BLOG</h1>
-                </div>
-            </div>
             <div class="blogg-row">
                 <?php
                 if (have_posts()) :

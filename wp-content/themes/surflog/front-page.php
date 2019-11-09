@@ -1,15 +1,13 @@
 <?php get_header(); ?>
-<div class="container-fluid">
+<div class="container-fluid-gray">
     <div class="hero">
-
+        <h1 class="title">Explore your surfing opportunities</h1>
+        <h2 class="title text-center">Find the best one, and go surf</h2>
+        <div class="overlay"></div>
+        <div class="hero-img"></div>
     </div>
     <div id="product-container">
         <div class="product-table container">
-            <div class="row title-row">
-                <div class="col-12">
-                    <h1 class="main-title text-center">TOURS</h1>
-                </div>
-            </div>
             <div class="product-row">
                 <?php
                 query_posts('cat=182');
@@ -18,7 +16,9 @@
                     while (have_posts()) : the_post();
                         /*if (in_category('182')) {*/
                         ?>
-                        <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {the_post_thumbnail_url();} ?>)">
+                        <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {
+                                                                                            the_post_thumbnail_url();
+                                                                                        } ?>)">
                             <a class="product-link" href="<?php the_permalink() ?>">
                                 <?php the_title('<h3>', '</h3>', true); ?>
                             </a>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <?php 
+    <?php
     include 'assets/includes/surfer.php';
     include 'assets/includes/post-carousel.php';
     ?>
