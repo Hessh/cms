@@ -12,39 +12,39 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 <div class="container-fluid-gray">
     <div class="hero">
         <h1 class="title">Blog</h1>
+        <div class="overlay"></div>
+        <?php while (have_posts()) : the_post(); ?>
+            <div class="hero-img fade" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
+        <?php endwhile; ?>
     </div>
     <div id="blogg-container">
-        <div class="blogg-table">
-            <div class="blogg-row">
-                <?php
-                if (have_posts()) :
-                    while (have_posts()) : the_post();
-                        if (in_category('Blog')) {
-                            ?>
-                            <div class="article-box">
-                                <div class="blogg-banner">
-                                    <a href="<?php the_permalink() ?>">
-                                        <img src="<?php if (has_post_thumbnail()) {
-                                                                    the_post_thumbnail_url();
-                                                                } ?>"></a>
-                                </div>
-                                <a href="<?php the_permalink() ?>">
-                                    <?php the_title('<h3>', '</h3>', true); ?>
-                                    <?php the_excerpt() ?>
-                                    <button>Les mer</button>
-                                </a>
-                            </div>
-                <?php
-                        }
-                    endwhile;
-                endif;
-                ?>
-            </div>
-            <div id="blogg-nav">
-                <?php previous_posts_link("<"); ?>
-                <span id="page-counter"><?php echo $paged; ?> / <?php echo $number_of_pages ?></span>
-                <?php next_posts_link(">"); ?>
-            </div>
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post();
+                if (in_category('Blog')) {
+                    ?>
+                    <div class="article-box">
+                        <div class="blogg-banner">
+                            <a href="<?php the_permalink() ?>">
+                                <img src="<?php if (has_post_thumbnail()) {
+                                                            the_post_thumbnail_url();
+                                                        } ?>"></a>
+                        </div>
+                        <a href="<?php the_permalink() ?>">
+                            <?php the_title('<h3>', '</h3>', true); ?>
+                            <?php the_excerpt() ?>
+                            <button>Les mer</button>
+                        </a>
+                    </div>
+        <?php
+                }
+            endwhile;
+        endif;
+        ?>
+        <div id="blogg-nav">
+            <?php previous_posts_link("<"); ?>
+            <span id="page-counter"><?php echo $paged; ?> / <?php echo $number_of_pages ?></span>
+            <?php next_posts_link(">"); ?>
         </div>
     </div>
     <?php include 'assets/includes/surfer.php'; ?>

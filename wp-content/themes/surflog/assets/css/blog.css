@@ -1,26 +1,16 @@
 .hero {
-  background-image: url("../img/hero-extra.jpg");
+  background-color: #000000;
 }
 
 #blogg-container {
-  max-width: 1200px;
-  margin: 0 auto 50px;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
-
-.blogg-table {
-  width: 100%;
-  background-color: white;
-  min-height: 100%;
-  padding-bottom: 10px;
-}
-
-.blogg-row {
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: hidden;
+  background-color: white;
 }
 
 #blogg-nav {
@@ -109,4 +99,19 @@
   color: #333333;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
   margin: 0 10px;
+}
+
+/* Animation for fading in images is banner */
+
+.fade {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from {
+      opacity: .1
+  }
+  to {
+      opacity: 1
+  }
 }
