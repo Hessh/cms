@@ -6,32 +6,31 @@
         <div class="overlay"></div>
         <div class="hero-img"></div>
     </div>
-    <div id="product-container">
-        <div class="product-table container">
-            <?php 
-            foreach( get_field('featured_post') as $post ):
-            serup_postdata( $post );
-            ?>
+    <div class="product-container">
+        <div class="product-table">
 
-            <div class="row product-box">
-            <div class="col-lg-8 col-sm-12 order-sm-one"><?php echo get_field('image_01') ?>
-                <a href="<?php the_parmalink(); ?>">
-                <?php the_post_thumbnail('featured-medium'); ?>
-                <h3 class="article-title"><?php the_title(); ?></h3>
-                </a>
-            </div>
-        
-    <?php 
-    wp_reset_postdata();
-            endforeach;
-            ?>
-        </div>
-        </div>
-    </div>
+        <?php $post_objects = get_field('post_objects');
+            if ( $post_objects ): ?>
+
+            <ul> <?php foreach( $post_objects as $post):?>
+        <?php setup_postdata($post); ?> 
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <?php the_field('front page') ?>
+        </li>
+        <?php endforeach; ?>
+    
+    </ul>
+    <?php wp_reset_postdata();?>
+    <?php endif
+   
+    ?>
 
     <?php
     include 'assets/includes/post-carousel.php';
     ?>
+    </div>
+    </div>
 </div>
 <?php get_footer(); ?>
 
