@@ -4,101 +4,103 @@ footer {
     padding: 20px 10px;
     z-index: 2;
     position: relative;
-  }
-  
-  footer * {
+}
+
+footer * {
     color: white;
     list-style: none;
-  }
-  
-  #footer-container {
+}
+
+#footer-container {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
     padding-top: 20px;
-  }
+}
 
-  .footer-content {
+.footer-content {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-  }
-  
-  #email span {
+}
+
+#email span {
     font-size: 1.5rem;
     vertical-align: bottom;
     margin-right: 10px;
-  }
-  
-  #popular-articles {
+}
+
+#popular-articles {
     padding: 0;
-  }
-  
-  #popular-articles li {
+}
+
+#popular-articles li {
     display: block;
     font-size: 1rem;
-  }
-  
-  #popular-articles a {
+}
+
+#popular-articles a {
     text-decoration: none;
     font-weight: 400;
     text-transform: none;
-  }
-  
-  #footer-menu {
+}
+
+#footer-menu {
     padding: 0;
-  }
-  
-  #footer-menu li {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#footer-menu li {
     float: left;
     margin-right: 10px;
     font-size: 0.9rem;
     margin: 0;
     text-transform: none;
-  }
-  
- #footer-menu li::after {
+}
+
+#footer-menu li::after {
     content: "|";
     margin: 0 10px;
-  }
-  
-  #footer-menu li:last-of-type::after {
+}
+
+#footer-menu li:last-of-type::after {
     content: "";
-  }
-  
-  #footer-menu a {
+}
+
+#footer-menu a {
     text-decoration: none;
     text-transform: none;
     font-weight: 400;
-  }
-  
-  footer a:hover {
-    color: #e4e4e4;
-  }
-  
-  #footer-info {
-    font-size: 0.9rem;
-  }
+}
 
-  @media only screen and (max-width: 950px) {
+footer a:hover {
+    color: #e4e4e4;
+}
+
+#footer-info {
+    font-size: 0.9rem;
+}
+
+#facebook {
+    margin: 0 0 0 2.2rem;
+}
+
+@media only screen and (max-width: 950px) {
     #footer-menu li {
-      display: block;
-      width: 100%;
+        display: block;
+        width: 100%;
     }
     #footer-menu li::after {
-      display: none;
+        display: none;
     }
-  
     #popular-articles li {
-      margin-left: 0;
-      padding: 0;
+        margin-left: 0;
+        padding: 0;
     }
-  
     #popular-articles a {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  
     .footer-content {
-      margin-top: 0;
+        margin-top: 0;
     }
-  }
+}
