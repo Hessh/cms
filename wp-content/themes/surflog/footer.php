@@ -13,7 +13,8 @@
 
 	</div><!-- #content -->
 	<footer>
-		<img src="http://hessh.no/cms/wp-content/uploads/2019/11/logo-white.png" alt="Surf Guru" >
+        <img class="sm-none" src="http://hessh.no/cms/wp-content/uploads/2019/11/logo-white.png" alt="SurfGuru" >
+        <img class="lg-none" src="http://hessh.no/cms/wp-content/uploads/2019/11/logo-kort-footer.png" alt="SurfGuru">
     <div id="footer-container">
         <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -23,7 +24,7 @@
             <div class="col-lg-4 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Kontakt</h3>
                 <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@surfguru.no</a>
-                <a id="facebook" target="_blank" href="https://www.facebook.com">Nå oss på Facebook</a>
+                <a id="facebook" target="_blank" href="https://www.facebook.com"><img src="http://hessh.no/cms/wp-content/uploads/2019/11/facebook-e1573339657408.png" alt="Facebook">Nå oss på Facebook</a>
             </div>
         </div>
         <div class="row">

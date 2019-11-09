@@ -22,10 +22,21 @@ footer * {
     flex-direction: column;
 }
 
+#email {
+    margin-bottom: 1rem;
+}
+
 #email span {
     font-size: 1.5rem;
     vertical-align: bottom;
     margin-right: 10px;
+    color: #EB6408;
+}
+
+#facebook img {
+    width: 1.5rem;
+    margin-right: 0.65rem;
+    vertical-align: bottom;
 }
 
 #popular-articles {
@@ -73,15 +84,11 @@ footer * {
 }
 
 footer a:hover {
-    color: #e4e4e4;
+    color: #575757;
 }
 
 #footer-info {
     font-size: 0.9rem;
-}
-
-#facebook {
-    margin: 0 0 0 2.2rem;
 }
 
 @media only screen and (max-width: 950px) {
