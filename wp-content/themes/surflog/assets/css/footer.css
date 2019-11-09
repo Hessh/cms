@@ -17,49 +17,17 @@ footer {
     position: relative;
     padding-top: 20px;
   }
-  
- /*.footer-logo-container {
-    position: relative;
-  }
-  
-  .footer-logo {
-      margin-right: 5px;
-  }
-  
-  .footer-text {
-    font-size: 1rem;
-  }
-  
-  .footer-logo-text {
-    font-size: 32px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .footer-logo-text span {
-    font-weight: 800;
-  } */
-  
-  #location span {
-    font-size: 1.5rem;
-    vertical-align: bottom;
-    margin-right: 10px;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
   }
   
   #email span {
     font-size: 1.5rem;
     vertical-align: bottom;
     margin-right: 10px;
-  }
-  
-  #facebook {
-    width: 15px;
-    height: 30px;
-  }
-  
-  .footer-content {
-    margin-top: 15px;
   }
   
   #popular-articles {
