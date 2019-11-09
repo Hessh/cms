@@ -13,9 +13,9 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     <div class="hero">
         <h1 class="title">Blog</h1>
         <div class="overlay"></div>
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while (have_posts()) : the_post(); if (in_category('Blog')) { ?>
             <div class="hero-img fade" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
-        <?php endwhile; ?>
+        <?php } endwhile; ?>
     </div>
     <div id="blogg-container">
         <?php
