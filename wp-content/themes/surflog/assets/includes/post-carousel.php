@@ -7,7 +7,7 @@
     </div>
         <div class="row">
             <div class="col-12">
-                <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+                <?php echo do_shortcode('[recent_post_slider design="design-4" category="1"]'); ?> 
             </div>
         </div>
     </div>
