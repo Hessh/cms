@@ -19,3 +19,9 @@
 .slick-loading .slick-slide{ visibility: hidden;}
 .slick-vertical .slick-slide{display: block; height: auto; border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
+
+@media only screen and (max-width: 780px) {
+    .slick-arrow{
+        display: none !important;
+    }
+}

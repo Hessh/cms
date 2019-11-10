@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://gmpg.org/xfn/11" rel="profile">
+    <link href="http://hessh.no/cms/wp-content/uploads/2019/11/favicon.png" rel="shortcut icon">
 
     <?php wp_head(); ?>
 
