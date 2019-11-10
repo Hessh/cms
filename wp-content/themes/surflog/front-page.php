@@ -7,31 +7,33 @@
         <div class="hero-img"></div>
     </div>
     <div class="product-container">
-        <div class="product-table">
-   
-    <?php 
-            foreach( get_field('image_01') as $post ):
-            setup_postdata( $post );
-            ?>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 order-sm-one">
+                <?php
+                query_posts('cat=182');
 
-            <div class="row product-box">
-            <div class="col-lg-8 col-sm-12 order-sm-one">
-                <a href="<?php the_parmalink(); ?>">
-                <?php the_post_thumbnail($post->ID); ?>
-                </a>
+                if (have_posts()) :
+                    while (have_posts()) : the_post();
+                        /*if (in_category('182')) {*/
+                        ?>
 
+                        <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {
+                                                                                            the_post_thumbnail_url();
+                                                                                        } ?>)">
+                            <a class="product-link" href="<?php the_permalink() ?>">
+                                <?php the_title('<h3>', '</h3>', true); ?>
+                            </a>
+                        </div>
+                <?php
+                    /*}*/
+                    endwhile;
+                endif;
 
-                <a href="<?php the_parmalink(); ?>">
-                <h3 class="article-title"><?php the_title(); ?></h3>
-                </a>
-               
+                wp_reset_query();
+                ?>
             </div>
         </div>
-        <?php 
-            wp_reset_postdata();
-            endforeach;
-            ?>
-        </div>
+
     </div>
 
     <?php

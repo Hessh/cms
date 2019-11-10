@@ -16,7 +16,7 @@ $number_of_pages = ceil($published_posts / $posts_per_page);
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid-gray">
     <div class="hero">
         <h1 class="title text-center"><?php the_title(); ?></h1>
         <div class="overlay"></div>
@@ -76,7 +76,6 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     </div>
 </div>
 <?php
-include 'assets/includes/surfer.php';
 include 'assets/includes/post-carousel.php';
 get_footer();
 ?>
