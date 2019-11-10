@@ -22,9 +22,9 @@
             </div>
             <div class="col-push-4 sm-none"></div>
             <div class="col-lg-4 col-sm-12 footer-content">
-                <h3 class="bold footer-heading">Kontakt</h3>
+                <h3 class="bold footer-heading">Contact</h3>
                 <a href="mailto:kontakt@surfguru.no" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@surfguru.no</a>
-                <a id="facebook" target="_blank" href="https://www.facebook.com"><img src="http://hessh.no/cms/wp-content/uploads/2019/11/facebook-e1573339657408.png" alt="Facebook">Nå oss på Facebook</a>
+                <a id="facebook" target="_blank" href="https://www.facebook.com"><img src="http://hessh.no/cms/wp-content/uploads/2019/11/facebook-e1573339657408.png" alt="Facebook">Reach us on Facebook</a>
             </div>
         </div>
         <div class="row">

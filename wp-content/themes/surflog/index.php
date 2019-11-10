@@ -4,7 +4,8 @@ get_header();
 
 <div class="container-fluid-gray">
     <div class="hero">
-        <h1 class="title">Blog</h1>
+        <h1 class="title text-center sm-none">Blog posts from recent travelers</h1>
+        <h1 class="title text-center lg-none">Blog posts</h1>
         <div class="overlay"></div>
         <?php while (have_posts()) : the_post(); if (in_category('Blog')) { ?>
             <div class="hero-img fade" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>

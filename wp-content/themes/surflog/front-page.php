@@ -2,9 +2,9 @@
 
 <div class="container-fluid-gray">
     <div class="hero">
-        <h1 class="title sm-none">Explore your surfing opportunities</h1>
+        <h1 class="title text-center sm-none">Explore your surfing opportunities</h1>
         <h2 class="title text-center sm-none">Find the best one, and go surf</h2>
-        <h1 class="title lg-none">Explore</h1>
+        <h1 class="title text-center lg-none">Explore</h1>
         <h2 class="title text-center lg-none">and go surf</h2>
         <div class="overlay"></div>
         <?php query_posts('cat=182');

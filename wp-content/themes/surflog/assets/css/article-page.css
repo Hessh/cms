@@ -6,7 +6,7 @@
     padding: 2rem 4rem;
 }
 
-.article-container h1{
+.article-container h1 {
     text-align: center;
     line-height: 32px;
 }
@@ -19,4 +19,17 @@
 .article-container img {
     padding: 0 auto;
     text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .title {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .article-container {
+        margin: 2rem 1rem;
+        padding: 1rem;
+    }
 }
