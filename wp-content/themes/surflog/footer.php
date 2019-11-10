@@ -23,18 +23,13 @@
             <div class="col-push-4 sm-none"></div>
             <div class="col-lg-4 col-sm-12 footer-content">
                 <h3 class="bold footer-heading">Kontakt</h3>
-                <a href="kontakt" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@surfguru.no</a>
+                <a href="mailto:kontakt@surfguru.no" id="email" class="icon footer-text"><span class="material-icons">email</span>kontakt@surfguru.no</a>
                 <a id="facebook" target="_blank" href="https://www.facebook.com"><img src="http://hessh.no/cms/wp-content/uploads/2019/11/facebook-e1573339657408.png" alt="Facebook">Nå oss på Facebook</a>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-sm-12">
-                <?php wp_nav_menu(array(
-                    'theme_location' => 'footer-menu',
-					'menu_id' => 'footer-menu',
-					'container' => 'ul',
-                    'menu_class' => 'footer-menu'
-                )); ?>
+                <?php wp_nav_menu('footer-menu')?>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <p id="footer-info">SurfGuru is maintained by Digital Marketing AS</p>

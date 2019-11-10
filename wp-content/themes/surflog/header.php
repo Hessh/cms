@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://gmpg.org/xfn/11" rel="profile">
-    <link href="http://hessh.no/cms/wp-content/uploads/2019/11/favicon.png" rel="shortcut icon">
+    <link href="http://hessh.no/cms/wp-content/uploads/2019/11/favicon-1.png" rel="shortcut icon">
 
     <?php wp_head(); ?>
 
@@ -36,12 +36,12 @@
             </a>
         </div>
         <div class="header-right">
-            <?php wp_nav_menu(
-                array(
+            <?php wp_nav_menu(array(
                     'theme_location' => 'top-menu',
                     'container' => 'nav',
                     'menu_class' => 'navigation'
                 )
             ); ?>
+            <div class="burger-menu">&#9776;</div>
         </div>
     </header>
