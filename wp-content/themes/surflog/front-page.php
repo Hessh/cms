@@ -17,8 +17,9 @@
             <div class="row product-box">
             <div class="col-lg-8 col-sm-12 order-sm-one">
                 <a href="<?php the_parmalink(); ?>">
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail($post->ID); ?>
                 </a>
+
 
                 <a href="<?php the_parmalink(); ?>">
                 <h3 class="article-title"><?php the_title(); ?></h3>
