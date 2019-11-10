@@ -1,3 +1,39 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form label {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+#form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#form textarea {
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+}
+
 #submit{
-    background-color: green;
+    width: unset;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-image: linear-gradient(#32AD36, #2b8b2e);
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-image: linear-gradient(#32AD36, #257528);
 }

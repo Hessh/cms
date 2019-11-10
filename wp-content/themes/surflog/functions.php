@@ -178,10 +178,18 @@ function surflog_enqueue_style()
 		
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+	} else if (is_page_template('404.php')) {
+
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
+		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
+		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
+
 	} else {
 
+		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/assets/css/header.css', false);
 		wp_enqueue_style('core', get_stylesheet_directory_uri() . '/style.css', false);
-		
+		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', false);
 		wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/assets/css/responsive.css', false);
 	}
 }
