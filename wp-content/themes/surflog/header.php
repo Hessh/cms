@@ -29,6 +29,7 @@
 </head>
 
 <body>
+<?php echo do_shortcode('[scroll-to-top]'); ?> 
     <header class="header-front-page">
         <div class="header-left">
             <a href="<?php echo get_home_url(); ?>">
