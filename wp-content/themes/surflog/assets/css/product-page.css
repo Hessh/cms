@@ -27,7 +27,7 @@
     background-image: linear-gradient(#f07929, #EB6409);
 }
 
-button:hover {
+.button-container button:hover {
     cursor: pointer;
     background-image: linear-gradient(#ec7526, #e05f08);
 }

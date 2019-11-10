@@ -11,10 +11,7 @@ wp_enqueue_script("scroll-to-top", plugin_dir_url('__FILE__') . "scroll-to-top/s
 
 function scroller()
 {
-
-    echo '<div class="scroll-container">
-            <button class="scroll-button" onclick="topScroll()"><span class="material-icons">arrow_upward</span></button>
-        </div>';
+    echo '<button class="scroll-button" onclick="topScroll()"><span class="material-icons">arrow_upward</span></button>';
 }
 
 function scrollerShortcode()
