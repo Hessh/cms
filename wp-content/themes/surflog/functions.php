@@ -212,7 +212,7 @@ add_action('wp_enqueue_scripts', 'surflog_scripts');
 /** Spesifies the lenght of the text in a thumbnail, and adds "..." */
 function wp_excerpt_length($length)
 {
-	return 20;
+	return 15;
 }
 
 function wpdocs_excerpt_more($more)

@@ -25,13 +25,13 @@ get_header();
                                 <a href="<?php the_permalink() ?>">
                                     <img src="<?php if (has_post_thumbnail()) {
                                                                 the_post_thumbnail_url();
-                                                            } ?>"></a>
+                                                            } ?>">
                             </div>
                             <div class="text-container">
                                 <?php the_title('<h3>', '</h3>', true); ?>
-                                <?php the_excerpt()?>
-                                
-                            </div>
+                                <?php the_excerpt() ?>
+
+                            </div></a>
                             <div class="button-container">
                                 <a href="<?php the_permalink() ?>"><button>Read more</button></a>
                             </div>
