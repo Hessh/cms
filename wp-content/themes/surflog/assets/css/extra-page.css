@@ -1,5 +1,6 @@
 .hero {
     background-image: url("../img/hero-extra.jpg");
+    height: calc(100vh - 25rem) !important;
 }
 
 .article-container {
@@ -11,8 +12,14 @@
 }
 
 @media only screen and (max-width: 780px) {
-    .article-container{
+    .article-container {
         margin: 2rem 1rem;
         padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .title {
+        font-size: 3rem !important;
     }
 }

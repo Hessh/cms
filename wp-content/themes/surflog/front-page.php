@@ -15,37 +15,41 @@
     </div>
     <div class="product-container">
         <div class="row">
-            <div class="col-lg-12 col-sm-12 order-sm-one">
-                <?php
-                query_posts('cat=182');
 
-                if (have_posts()) :
-                    while (have_posts()) : the_post();
-                        /*if (in_category('182')) {*/
-                        ?>
+            <?php
+            query_posts('cat=182');
 
-                        <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {
-                                                                                            the_post_thumbnail_url();
-                                                                                        } ?>)">
-                            <a class="product-link" href="<?php the_permalink() ?>">
-                                <?php the_title('<h3>', '</h3>', true); ?>
-                            </a>
+            if (have_posts()) :
+                while (have_posts()) : the_post();
+                    /*if (in_category('182')) {*/
+                    ?>
+                    <div class="col-lg-12 col-sm-12 order-sm-one">
+                    <div class="product-box" style="background-image: url(<?php if (has_post_thumbnail()) {
+                                                                                        the_post_thumbnail_url();
+                                                                                    } ?>)">
+                        <a class="product-link" href="<?php the_permalink() ?>">
+                            <?php the_title('<h3>', '</h3>', true); ?>
+                        </a>
+                        <div class="button-container">
+                            <a href="<?php the_permalink() ?>"><button>View trip</button></a>
                         </div>
-                <?php
-                    /*}*/
-                    endwhile;
-                endif;
+                    </div>
+                    </div>
+            <?php
+                /*}*/
+                endwhile;
+            endif;
 
-                wp_reset_query();
-                ?>
-            </div>
+            wp_reset_query();
+            ?>
         </div>
-
     </div>
 
-    <?php
-    include 'assets/includes/post-carousel.php';
-    ?>
+</div>
+
+<?php
+include 'assets/includes/post-carousel.php';
+?>
 </div>
 
 <?php get_footer(); ?>
